@@ -15,7 +15,7 @@ public class UserDatabase {
         boolean set = false;
         try{
             //Insert register data to database
-            String query = "insert into user(name,email,password) values(?,?,?)";
+            String query = "insert into user(name,email,password) values(?,?)";
            
            PreparedStatement pt = this.con.prepareStatement(query);
            pt.setString(1, user.getName());
